@@ -31,7 +31,7 @@ class DownloadLinkManager {
         </div>
         <div class="download-url">
           <strong>Download-URL:</strong><br>
-          <p>zilanch.github.io/download/data/${file.url}</p>
+          zilanch.github.io/download/data/${file.url}
         </div>
       </div>
     `).join('');
