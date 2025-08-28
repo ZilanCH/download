@@ -1,4 +1,5 @@
 @echo off
+cd /d "C:\Users\S.14847\OneDrive - Schule AR\2. Sekundarklasse\__Verein\code\download"
 :menu
 cls
 echo ================================
