@@ -1,3 +1,4 @@
 [
-    { "name": "UltraVNC Installer (Extern)", "url": "UltraVNC_1640_x64_Setup.exe" }
+    { "name": "UltraVNC Installer (Extern)", "url": "UltraVNC_1640_x64_Setup.exe" },
+    { "name": "Vallah Text (S4rix)", "url": "vallah.txt" }
 ]
