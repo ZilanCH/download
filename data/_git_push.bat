@@ -1,5 +1,5 @@
 @echo off
-cd /d "C:\Users\S.14847\OneDrive - Schule AR\2. Sekundarklasse\__Verein\code\download"
+cd /d "C:\Users\S.14847\OneDrive - Schule AR\2. Sekundarklasse\_____GIT_DOWNLOAD"
 :menu
 cls
 echo ================================
