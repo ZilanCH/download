@@ -36,7 +36,7 @@ class DownloadLinkManager {
       <div class="link-item">
         <div class="link-header">
           <div class="link-title">📄 ${file.name}</div>
-          <span class="file-tag" style="color:${tagColor}">${file.tag}</span>
+          <span class="file-tag" style="color:${tagColor}; margin-right:25px">${file.tag}</span>
           <div class="link-actions">
             <a class="btn" href="data/${file.url}" download>⬇️ Download</a>
           </div>
