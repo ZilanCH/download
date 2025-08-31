@@ -1,5 +1,5 @@
 [
-    { "name": "UltraVNC Installer (Extern)", "url": "UltraVNC_1640_x64_Setup.exe" },
-    { "name": "Vallah Text (by S4rix)", "url": "vallah.txt" },
-    { "name": "GitHub Updater (DEV)", "url": "_git_push.bat" }
+    { "name": "UltraVNC Installer", "url": "UltraVNC_1640_x64_Setup.exe", "tag": "Extern" },
+    { "name": "Vallah Text (by S4rix)", "url": "vallah.txt", "tag": "Zilan" },
+    { "name": "GitHub Updater", "url": "_git_push.bat", "tag": "Dev" }
 ]

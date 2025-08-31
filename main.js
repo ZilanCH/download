@@ -16,15 +16,27 @@ class DownloadLinkManager {
   }
 
   updateDisplay(files) {
-    if (!files || files.length === 0) {
-      this.listElement.innerHTML = "<p>Keine Dateien gefunden.</p>";
-      return;
-    }
+  if (!files || files.length === 0) {
+    this.listElement.innerHTML = "<p>Keine Dateien gefunden.</p>";
+    return;
+  }
 
-    this.listElement.innerHTML = files.map(file => `
+  // Sort with external function
+  files = sortFiles(files);
+
+  this.listElement.innerHTML = files.map(file => {
+    const tagColors = {
+      "Dev": "red",
+      "Zilan": "blue",
+      "Extern": "green"
+    };
+    const tagColor = tagColors[file.tag] || "gray";
+
+    return `
       <div class="link-item">
         <div class="link-header">
           <div class="link-title">📄 ${file.name}</div>
+          <span class="file-tag" style="color:${tagColor}">${file.tag}</span>
           <div class="link-actions">
             <a class="btn" href="data/${file.url}" download>⬇️ Download</a>
           </div>
@@ -34,8 +46,10 @@ class DownloadLinkManager {
           zilanch.github.io/download/data/${file.url}
         </div>
       </div>
-    `).join('');
-  }
+    `;
+  }).join('');
+}
+
 }
 
 const manager = new DownloadLinkManager(document.getElementById("linksList"));
