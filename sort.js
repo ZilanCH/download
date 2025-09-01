@@ -1,6 +1,6 @@
 // sort.js
 function sortFiles(files) {
-  const order = ["Dev", "Zilan", "Extern"]; // your desired order
+  const order = ["Zilan", "Dev", "Extern"]; // your desired order
 
   return files.sort((a, b) => {
     const aIndex = order.indexOf(a.tag);
